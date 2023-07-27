@@ -1,0 +1,29 @@
+.card {
+  min-height: var(--card-height);
+  min-width: var(--card-height);
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  background: khaki;
+  transition: all 100ms ease-in-out;
+
+  border-radius: 0.25rem;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card.selected {
+  position: relative;
+  border: 2px solid darkslategray;
+  top: -0.5rem;
+}
+.card:active {
+  background: yellowgreen;
+}
+.cardHeader {
+  padding: 0 1rem;
+}
